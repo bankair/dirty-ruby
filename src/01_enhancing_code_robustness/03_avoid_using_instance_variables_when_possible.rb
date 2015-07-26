@@ -1,8 +1,7 @@
 ##
-# Using instance or class variables directly can lead to errors in several ways:
-#
-# * By bypassing any validation you would add prior to value assignment
-# * By 
+# Using references on instance variables directly can lead to errors in several
+# ways, for example by bypassing any validation you would add prior to value
+# assignment or updating accidentally a value meant to be immutable.
 #
 # For a start, let's imagine you create a car class that has a color variable
 # that accept only 'red', 'green' and 'blue' as values:
