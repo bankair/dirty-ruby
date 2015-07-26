@@ -8,11 +8,16 @@ class Generator
   end
   def make_title(depth)
     raise 'Invalid depth' if depth < 1
-    '#' * depth << ' ' << title << end_of_line
+    result = '#' * depth << ' ' << title << end_of_line
+    result << make_anchor
   end
 
   def anchor
     title.tr(' ', '_').downcase
+  end
+
+  def make_anchor
+    "<sup>[[link](##{anchor})]</sup>#{end_of_line}"
   end
 
   def table_of_content_elements(depth)

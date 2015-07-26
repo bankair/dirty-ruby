@@ -44,8 +44,10 @@ class ChapterGenerator < Generator
 
   def table_of_content_elements(depth)
     result = ''
+    prefix = '  ' * (depth - 1)
     sections.each do |section|
-      result << ("1." * depth) << " [#{section.title}](##{section.anchor})"
+      result << prefix
+      result << "1. [#{section.title}](##{section.anchor})"
       result << end_of_line
       result << section.table_of_content_elements(depth + 1)
     end
@@ -59,6 +61,7 @@ class ChapterGenerator < Generator
     result << table_of_content(depth) if toc
     sections.each do |section|
       result << section.dump(depth: depth + 1, toc: false)
+      result << end_of_line
     end
     result
   end
