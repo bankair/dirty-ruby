@@ -1,16 +1,14 @@
 # Ruby patterns collection
-<sup>[[link](#ruby_patterns_collection)]</sup>
 
 This repo is a collection of some ruby patterns, sorted by motivation.
 
 # Table of content
 
-1. [Enhancing code robustness](#enhancing_code_robustness)
-  1. [Securing parameters](#securing_parameters)
-  1. [Fake abstract interface](#fake_abstract_interface)
+1. [Enhancing code robustness](#enhancing-code-robustness)
+  1. [Securing parameters](#securing-parameters)
+  1. [Fake abstract interface](#fake-abstract-interface)
 
 ## Enhancing code robustness
-<sup>[[link](#enhancing_code_robustness)]</sup>
 
 Ruby is a quite an awesome language.
 
@@ -29,7 +27,6 @@ In this section, you'll find some interesting patterns to enhance your code
 robustness.
 
 ### Securing parameters
-<sup>[[link](#securing_parameters)]</sup>
 There is no strong typing in ruby (for the moment). Duck typing is fun
 and quite useful, but sometimes, you want to ensure that your friends
 will give your functions the right kind of value.
@@ -109,7 +106,6 @@ There exists two more kernel methods for value conversion:
 * Kernel::Array(value)
 
 ### Fake abstract interface
-<sup>[[link](#fake_abstract_interface)]</sup>
 Ruby does not include the abstract interface construct.
 In order to enforce an implementation policy, you can however
 use a fake abstract interface (which, actually, is a class
