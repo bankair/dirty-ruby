@@ -1,4 +1,4 @@
-# Ruby patterns and tips collection
+# Dirty ruby
 
 Before working with ruby, at the beginning of 2014, I spent ten years working
 as a software contractor (C#/C++) for several quite big clients (mostly banks).

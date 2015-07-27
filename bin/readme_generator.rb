@@ -5,7 +5,7 @@ $:.unshift(File.dirname(__FILE__) << '/../lib')
 require 'chapter_generator'
 
 PATH = 'src'
-TITLE = 'Ruby patterns and tips collection'
+TITLE = 'Dirty ruby'
 
 generator = ChapterGenerator.new(PATH, title: TITLE)
 
