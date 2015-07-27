@@ -437,12 +437,12 @@ in $.
 And the course of actions would look like follow:
 
 ```
-- car 1  ->┌───────────┐          ┌───────────┐            ┌───────────┐
-- car 2  ->│Component A│- car 1 ->│Component B│- price 1 ->│Component C│
-- car 3  ->├───────────┤- car 2 ->├───────────┤- price 2 ->├───────────┤   Average
-. . .    │ Filter    │  . . .   │ Convert to│  . . .     │ Calculate │-> price of non
-- car n-1->│ cars      │- car m ->│ $ prices  │- price m ->│ average   │   green cars
-- car n  ->└───────────┘          └───────────┘            └───────────┘
+┌───────────┐          ┌───────────┐            ┌───────────┐
+│Component A│- car 1 ->│Component B│- price 1 ->│Component C│
+├───────────┤- car 2 ->├───────────┤- price 2 ->├───────────┤   Average
+│ Filter    │  . . .   │ Convert to│  . . .     │ Calculate │-> price of non
+│ cars      │- car m ->│ $ prices  │- price m ->│ average   │   green cars
+└───────────┘          └───────────┘            └───────────┘
 ```
 
 Those components would be named:
