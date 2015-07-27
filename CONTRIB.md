@@ -17,7 +17,8 @@ leaded by a double #.
 For example, the following ruby code:
 ```ruby
 ##
-# That is a block of markdown:
+# That is a *block* of markdown:
+#
 # 1. item 1
 # 2. item 2
 
@@ -27,9 +28,10 @@ puts 'Ruby !'
 
 Will result in the following formatted text:
 
-# That is a block of markdown:
-# 1. item 1
-# 2. item 2
+That is a *block* of markdown:
+
+1. item 1
+2. item 2
 
 ```ruby
 # Genuine comment
