@@ -1,4 +1,4 @@
-
+require 'forwardable'
 class Block
   protected
   attr_accessor :formatter
